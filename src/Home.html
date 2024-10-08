@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="popup.js"></script>
+</head>
+<body>
+    <section class="nev_home  bg-[#1CB99C] ">
+        <nav class=" flex p-4 items-center">
+            <img class="w-10 h-10 mx-5" src="\img\Logo.png" alt="Error">
+            <h1 class="text-white text-2xl  font-extrabold font-inria  ">Genetic Disease Risk Calculator</h1>
+        </nav>
+    </section>
+
+    <section class="sec_content"> 
+        <div class="flex flex-wrap justify-center items-center w-screen mt-24">
+            
+
+            <!-- AD -->
+            <div class="flex flex-col items-center justify-center relative">
+                <img class="min-w-40 max-w-96 mx-10 scale-x-[-1]" src="/img/AD.png" alt="Error">
+                <button class="flex items-center absolute top-2 right-14" onclick="openPopup('popup_AD')" > 
+                    <img  src="/img/information.png" alt="Icon" class="w-6 h-6">
+                </button>
+                <button class="button_AD w-auto font-inria font-semibold bg-[#F78EBF] my-20 mx-10 px-8 py-4 rounded-full text-2xl transition duration-500 hover:scale-125 hover:bg-[#F78EBF]" onclick="window.location.href='AutosomalDominant.html'">
+                    Autosomal <br> Dominant
+                </button>
+            </div>
+
+            <!-- AR -->
+            <div class="flex flex-col items-center justify-center relative">
+                <img class="min-w-40 max-w-96 mx-10" src="/img/AR.png" alt="Error">
+                <button class="flex items-center absolute top-2 right-14" onclick="openPopup('popup_AR')"> 
+                    <img src="/img/information.png" alt="Icon" class="w-6 h-6"> 
+                </button>
+                <button class="button_AR font-inria font-semibold bg-[#FFD676] my-20 mx-10 px-8 py-4 rounded-full text-2xl transition duration-500 hover:scale-125 hover:bg-[#FFD676]" onclick="window.location.href='AutosomalRecessive.html'">
+                    Autosomal <br> Recessive
+                </button>
+            </div>
+
+            <!-- XD -->
+            <div class=" flex flex-col items-center justify-center relative">
+                <img class="min-w-40 max-w-96 mx-10" src="/img/XD.png" alt="Error">
+                <button class="flex items-center absolute top-2 right-14" onclick="openPopup('popup_XD')"> 
+                    <img src="/img/information.png" alt="Icon" class="w-6 h-6"> 
+                </button>
+                <button class="button_XD font-inria font-semibold bg-[#5CC4E1] my-20 mx-10 px-8 py-4 rounded-full text-2xl transition duration-500 hover:scale-125 hover:bg-[#5CC4E1]" onclick="window.location.href='Sex-linkedDominant.html'">
+                    X-linked <br> Dominant
+                </button>
+            </div>            
+
+            <!-- XR -->
+            <div class=" flex flex-col items-center justify-center relative">
+                <img class="min-w-40 max-w-96 mx-10" src="/img/XR.png" alt="Error">
+                <button class="flex items-center absolute top-2 right-14" onclick="openPopup('popup_XR')"> 
+                    <img src="/img/information.png" alt="Icon" class="w-6 h-6"> 
+                </button>
+                <button class="button_XR font-inria font-semibold bg-[#22CCAD] my-20 mx-10 px-8 py-4 rounded-full text-2xl transition duration-500 hover:scale-125 hover:bg-[#22CCAD]" onclick="window.location.href='Sex-linkedRecessive.html'">
+                    X-linked <br> Recessive
+                </button>
+            </div>
+
+           <!-- Popups AD -->
+            <div id="popup_AD" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div class="bg-white p-8 rounded-lg w-2/4"> 
+                    <h2 class="text-2xl font-bold mb-4">Autosomal Dominant (AD)</h2>
+                    <p>เป็นรูปแบบการถ่ายทอดทางพันธุกรรมที่เกิดจากความผิดปกติบนโครโมโซมร่างกาย ซึ่งไม่เกี่ยวข้องกับเพศของผู้สืบทอด หากพ่อหรือแม่มีความผิดปกติจะมีโอกาส 50% ที่จะถ่ายทอดยีนที่ผิดปกติไปยังลูกไม่ว่าจะเป็นเพศชาย หรือ เพศหญิงก็ตาม โดยทั่วไปอัตราส่วนระหว่างเด็กที่ได้รับผลกระทบกับเด็กที่ไม่ได้รับผลกระทบจะอยู่ที่ประมาณ 1:1</p>
+                    <div class="flex justify-end">
+                        <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded" onclick="closePopup('popup_AD')">Close</button>
+                    </div>
+                </div>
+            </div>
+    
+
+            <!-- Popups AR -->
+            <div id="popup_AR" class="popup hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 ">
+                <div class="bg-white p-8 rounded-lg w-2/4">
+                    <h2 class="text-2xl font-bold mb-4">Autosomal Recessive (AR)</h2>
+                    <p>เป็นรูปแบบการถ่ายทอดทางพันธุกรรมที่เกิดขึ้นเมื่อยีนผิดปกติอยู่บนโครโมโซมร่างกายและจะแสดงอาการ หรือ ความผิดปกติเมื่อได้รับยีนผิดปกติมาจากทั้งพ่อและแม่คนละตัวในกรณีที่พ่อหรือแม่เป็นพาหะจะไม่แสดงอาการ แต่สามารถถ่ายทอดยีนผิดปกตินี้ไปยังลูกได้ถ้าลูกได้รับยีนผิดปกติจากทั้งพ่อและแม่ลูกจะมีโอกาสแสดงความผิดปกติ</p>
+                    <div class="flex justify-end">
+                        <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded" onclick="closePopup('popup_AR')">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popups XD -->
+            <div id="popup_XD" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 ">
+                <div class="bg-white p-8 rounded-lg w-2/4">
+                    <h2 class="text-2xl font-bold mb-4">X-linked Dominant (XD)</h2>
+                    <p>เป็นรูปแบบการถ่ายทอดความผิดปกติทางพันธุกรรมที่เกิดจากยีนผิดปกติบนโครโมโซมเพศ X ลักษณะนี้สามารถส่งผลกระทบต่อทั้งเพศชายและเพศหญิงแต่ผลกระทบจะแตกต่างกันไปตามเพศ เนื่องจากเพศชายมีโครโมโซม X เพียงหนึ่งตัวในขณะที่เพศหญิงมีโครโมโซม X สองตัวในกรณีที่พ่อที่มีความผิดปกติจะส่งต่อโครโมโซม X ให้ลูกสาวทุกคนแม่ที่มีความผิดปกติจะมีโอกาส 50% ที่จะถ่ายทอดยีนผิดปกติไปยังลูกทั้งเพศชายและเพศหญิง</p>
+                    <div class="flex justify-end">
+                        <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded" onclick="closePopup('popup_XD')">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popups XR -->
+            <div id="popup_XR" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 ">
+                <div class="bg-white p-8 rounded-lg w-2/4">
+                    <h2 class="text-2xl font-bold mb-4">X-linked Recessive (XR)</h2>
+                    <p>เป็นรูปแบบการถ่ายทอดทางพันธุกรรมที่เกิดจากยีนผิดปกติที่อยู่บนโครโมโซมเพศ X ความผิดปกตินี้จะแสดงอาการเมื่อมียีนผิดปกติหนึ่งตัวในเพศชายและสองตัวในเพศหญิงเพศหญิงจะได้รับผลกระทบก็ต่อเมื่อได้รับยีนผิดปกติจากทั้งพ่อและแม่ เพศหญิงที่มียีนผิดปกติหนึ่งตัวบนโครโมโซม X จะเป็นพาหะที่สามารถถ่ายทอดยีนนี้ไปยังลูกได้ เพศชายที่ได้รับยีนผิดปกติจากแม่จะได้รับผลกระทบ</p>
+                    <div class="flex justify-end">
+                        <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded" onclick="closePopup('popup_XR')">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

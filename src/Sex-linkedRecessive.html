@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sex-linkedRecessive</title>
+    <link href="output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-neutral-200">
+    <section class="nev_home bg-[#22CCAD]">
+      <nav class="flex p-4 items-center">
+        <img class="w-10 h-10 mx-5" src="\img\Logo.png" alt="Error" />
+        <h1 class="text-white text-2xl font-extrabold font-inria">
+            Sex-linked Recessive
+        </h1>
+        <a href="Home.html" class="inline-block ml-auto">
+          <img
+            class="w-10 h-10 ml-auto"
+            src="\img\home.png"
+            alt="Home Logo"
+          />
+        </a>
+      </nav>
+    </section>
+    <div class="ml-24 font-inria mt-24">
+      <ol class="text-lg">
+        <li>
+          <p class="">1. โรคฮีโมฟีเลีย (Hemophilia)</p>
+          <p class="mt-3">
+            &nbsp;&nbsp;&nbsp;&nbsp;  การแข็งตัวของเลือดผิดปกติ ทำให้เลือดไหลออกนานกว่าปกติแม้บาดแผลเล็กน้อย บางครั้งอาจมีเลือดออกภายในตามข้อต่อ ทำให้เกิดอาการปวดและบวม
+          </p>
+        </li>
+        <li class="mt-5">
+          <p class="">2. โรคตาบอดสี (Color Blindness)</p>
+          <p class="mt-3">
+            &nbsp;&nbsp;&nbsp;&nbsp;ไม่สามารถแยกแยะสีได้อย่างถูกต้อง โดยเฉพาะสีแดงและสีเขียว 
+            โรคนี้พบได้บ่อยในเพศชาย แต่ไม่ก่อให้เกิดผลเสียต่อสุขภาพโดยรวม
+          </p>
+        </li>
+        <li class="mt-5">
+          <p class="">3. โรค G6PD Deficiency (ภาวะพร่องเอนไซม์ G6PD)</p>
+          <p class="mt-3">
+            &nbsp;&nbsp;&nbsp;&nbsp; การขาดเอนไซม์ G6PD ทำให้เม็ดเลือดแดงเปราะและแตกง่ายเมื่อถูกกระตุ้นด้วยสารบางชนิด 
+            เช่น ยาและอาหารบางชนิด อาจทำให้เกิดภาวะโลหิตจางเฉียบพลัน ตัวเหลือง และปัสสาวะสีเข้ม
+          </p>
+        </li>
+      </ol>
+      <center>
+        <select
+          name="select_disease"
+          id="disease"
+          class="bg-[#22CCAD] p-5 rounded-full mt-10"
+        >
+          <option value="" class="bg-white" disabled selected>
+            
+            Select the disease you want to analyze
+          </option>
+          <option value="huntington" class="bg-white">
+            โรคฮีโมฟีเลีย (Hemophilia)
+          </option>
+          <option value="osteogenesis" class="bg-white">
+            โรคตาบอดสี (Color Blindness)
+          </option>
+          <option value="brachydactyly" class="bg-white">โรค G6PD Deficiency (ภาวะพร่องเอนไซม์ G6PD)</option>
+        </select>
+    </center>
+    <center>
+      <button type="submit" value="Done" class="bg-[#8D8D8D] hover:bg-black duration-300 text-white px-10 py-3 rounded-full mt-5" onclick="window.location.href='Sex-linkedRecessiveRe.html'">
+        DONE
+      </button>
+    </center> 
+    </div>
+  </body>
+</html>

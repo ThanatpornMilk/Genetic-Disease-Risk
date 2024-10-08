@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sec-bg flex flex-col relative h-screen w-screen justify-center bg-gradient-to-r from-[#000000] to-[#1CB99C] text-3xl">
+
+        <div class="div-conten flex flex-col items-center justify-center font-inria font-serif text-white mb-72 z-10">
+            <img class="h-36 m-5" src="\img\Logo.png" alt="Error">
+            <h1 class=" md:text-5xl 2xl:text-8xl m-5">Genetic Disease <br> Risk Calculator</h1>
+            <h4 class=" md:text-4xl 2xl:text-5xl m-5">Calculate the risk of disease</h4>
+        </div>
+
+        <div class="absolute ml-16 z-0">
+            <img class="h-screen " src="\img\DNA.png" alt="Error">
+        </div>
+        
+        <div class="div-bottom absolute bottom-0 w-full z-10">
+            <div class="bg-gray-300 w-full  md:h-14 2xl:h-16 flex items-end justify-end relative">
+                <button class="md:text-4xl 2xl:text-5xl py-5 md:py-6 p-2xl:py-8 px-60 group rounded-tl-full font-inria font-semibold bg-white " onclick="window.location.href='Home.html'">
+                    <div class="relative">
+                        <p>START</p>
+                        <span class="absolute -bottom-2 left-0 w-0 h-2 bg-black transition-all group-hover:w-full"></span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>

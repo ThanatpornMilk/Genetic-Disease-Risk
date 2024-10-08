@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autosomal RecesssiveResult</title>
+    <link href="output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-neutral-200">
+    <section class="nev_home" style="background-color: #FFD676;">
+      <nav class="flex p-4 items-center">
+        <img class="w-10 h-10 mx-5" src="\img\Logo.png" alt="Error" />
+        <h1 class="text-white text-2xl font-extrabold font-inria">
+            Autosomal Recesssive Result
+        </h1>
+        <a href="Home.html" class="inline-block ml-auto">
+          <img
+            class="w-10 h-10 ml-auto"
+            src="\img\home.png"
+            alt="Home Logo"
+          />
+        </a>
+      </nav>
+    </section>
+
+    <div class="flex justify-center p-10 w-full">
+      <div class="bg-white w-full max-w-4xl rounded-lg shadow-lg p-6">
+        <div class="flex justify-between items-center mb-4">
+          <div class="flex flex-col items-center">
+            <label for="dad-traits" class="text-lg font-semibold">DAD</label>
+            <select
+              id="dad-traits"
+              class="bg-gray-200 p-2 rounded-lg mt-2"
+            >
+              <option value="" disabled selected>Select Traits</option>
+              <option value="AA">AA (Healthy) </option>
+              <option value="Aa">Aa (Carrier)</option>
+              <option value="aa">aa (Diseased)</option>
+
+            </select>
+          </div>
+
+          <div style="border-left: 1px solid #e5e5e5; height: 80px; margin: 0 10px;"></div>
+
+          <div class="flex flex-col items-center">
+            <label for="mom-traits" class="text-lg font-semibold">MOM</label>
+            <select
+              id="mom-traits"
+              class="bg-gray-200 p-2 rounded-lg mt-2"
+            >
+              <option value="" disabled selected>Select Traits</option>
+              <option value="AA">AA (Healthy) </option>
+              <option value="Aa">Aa (Carrier)</option>
+              <option value="aa">aa (Diseased)</option>
+
+            </select>
+          </div>
+        </div>
+
+        <div class="bg-gray-300 text-center p-4 h-96 rounded-lg">
+          <h2 class="text-xl font-bold">THE ANALYSIS RESULT</h2>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
